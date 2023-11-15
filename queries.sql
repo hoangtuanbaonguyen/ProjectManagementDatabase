@@ -28,7 +28,6 @@ VALUES
 -- tasks are represented in the tasks table
 INSERT INTO "tasks" ("segment_id", "title", "start_at", "end_at")
 VALUES
--- first project insertion
 (1, 'Define the project scope and objectives.', CURRENT_TIMESTAMP, datetime(CURRENT_TIMESTAMP, '+1 day')),
 (1, 'Identify key stakeholders (local communities, environmental organizations, government bodies.)', datetime(CURRENT_TIMESTAMP, '+1 day'), datetime(CURRENT_TIMESTAMP, '+2 days')),
 (1, 'Conduct a feasibility study to assess the viability of the project.', datetime(CURRENT_TIMESTAMP, '+2 days'), datetime(CURRENT_TIMESTAMP, '+3 days')),
@@ -38,17 +37,16 @@ VALUES
 (2, 'Form a project team and assign responsibilities.', datetime(CURRENT_TIMESTAMP, '+6 days'), datetime(CURRENT_TIMESTAMP, '+7 days')),
 (2, 'Establish communication channels with stakeholders.', datetime(CURRENT_TIMESTAMP, '+7 days'), datetime(CURRENT_TIMESTAMP, '+8 days')),
 (2, 'Identify potential risks and develop a risk management plan.', datetime(CURRENT_TIMESTAMP, '+8 days'), datetime(CURRENT_TIMESTAMP, '+9 days')),
-(2, 'Plan for monitoring and evaluation of the project\'s progress.', datetime(CURRENT_TIMESTAMP, '+9 days'), datetime(CURRENT_TIMESTAMP, '+10 days')),
+(2, 'Plan for monitoring and evaluation of the project progress.', datetime(CURRENT_TIMESTAMP, '+9 days'), datetime(CURRENT_TIMESTAMP, '+10 days')),
 (3, 'Mobilize resources, including equipment and personnel.', datetime(CURRENT_TIMESTAMP, '+10 days'), datetime(CURRENT_TIMESTAMP, '+11 days')),
 (3, 'Conduct awareness campaigns to involve local citizens in the cleanup efforts.', datetime(CURRENT_TIMESTAMP, '+11 days'), datetime(CURRENT_TIMESTAMP, '+12 days')),
 (3, 'Implement the cleanup activities according to the project plan', datetime(CURRENT_TIMESTAMP, '+12 days'), datetime(CURRENT_TIMESTAMP, '+13 days')),
 (3, 'Regularly communicate with the project team and stakeholders to address any issues.', datetime(CURRENT_TIMESTAMP, '+13 days'), datetime(CURRENT_TIMESTAMP, '+14 days')),
-(4, 'Evaluate the project\'s success against the initial objectives.', datetime(CURRENT_TIMESTAMP, '+14 days'), datetime(CURRENT_TIMESTAMP, '+15 days')),
+(4, 'Evaluate the projects success against the initial objectives.', datetime(CURRENT_TIMESTAMP, '+14 days'), datetime(CURRENT_TIMESTAMP, '+15 days')),
 (4, 'Celebrate achievements and acknowledge the efforts of the project team and volunteers.', datetime(CURRENT_TIMESTAMP, '+15 days'), datetime(CURRENT_TIMESTAMP, '+16 days')), 
 (4, 'Document lessons learned for future reference.', datetime(CURRENT_TIMESTAMP, '+16 days'), datetime(CURRENT_TIMESTAMP, '+17 days')), 
 (4, 'Develop a maintenance plan to ensure the continued cleanliness of the rivers.', datetime(CURRENT_TIMESTAMP, '+17 days'), datetime(CURRENT_TIMESTAMP, '+18 days')), 
-(4, 'Communicate the project\'s outcomes to the community and stakeholders.', datetime(CURRENT_TIMESTAMP, '+18 days'), datetime(CURRENT_TIMESTAMP, '+19 days')), 
--- the second project insertion
+(4, 'Communicate the project outcomes to the community and stakeholders.', datetime(CURRENT_TIMESTAMP, '+18 days'), datetime(CURRENT_TIMESTAMP, '+19 days')), 
 (5, 'Develop a detailed plan for implementing the prefix change.', datetime(CURRENT_TIMESTAMP, '+19 days'), datetime(CURRENT_TIMESTAMP, '+20 days')),
 (5, 'Collaborate with technical teams to ensure network compatibility with the new prefixes.', datetime(CURRENT_TIMESTAMP, '+20 days'), datetime(CURRENT_TIMESTAMP, '+21 days')),
 (5, 'Communicate the upcoming change to customers and provide necessary information.', datetime(CURRENT_TIMESTAMP, '+21 days'), datetime(CURRENT_TIMESTAMP, '+22 days')),
