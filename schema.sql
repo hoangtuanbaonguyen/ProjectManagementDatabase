@@ -72,7 +72,6 @@ CREATE TABLE project_views (
 	title                TEXT NOT NULL    ,
 	"type"               TEXT NOT NULL DEFAULT 'list'   ,
 	FOREIGN KEY ( project_id ) REFERENCES projects( id ) ON DELETE CASCADE ,
-	CHECK (  "is_active" in (0, 1) ),
 	CHECK ( "type" in ('list', 'calendar') )
  );
 
