@@ -10,14 +10,15 @@
 
 
 ## Scope    
-Cơ sở dữ liệu về hệ thống quản lý dự án của doanh nghiệp, giảm chi phí vận hành, tăng khả năng quản lý và hiệu quả của các dự án trong doanh nghiệp, phù hợp cả hai phương pháp quản lý dự án là Agile và Waterfall.
-* accounts: bao gồm thống tin của người dùng đã đăng ký.
-* projects: bao gồm các dự án của người dùng
-* project views: bao gồm các viễn cảnh của các dự án khác nhau.
-* segments: bao gồm các giai đoạn của các dự án khác nhau.
-* tasks: bao gồm các công việc khác nhau của các dự án đã được phân chia cụ thể và hiệu quả.
-* assignments: bao gồm việc giao việc cho những người dùng khác nhau, giao cho ai và làm gì.
-* task_comments: bao gồm các bình luận của người trên những công việc cụ thể của từng dự án.
+The database of project management system for organizations, this dercreases operation fees and increases the process speed of projects, and it comfortables to the both methodology are Agile and Scrum.
+
+* accounts: Contains detail information of users.
+* projects: Contains the projects created by users.
+* project views: Contains visualization views of projects.
+* segments: Contains the segments of project's life cycle.
+* tasks: Contains the tasks were created by owners.
+* assignments: Contains the assignments that the owners were assgined to users.
+* task_comments: Contains the comments from users, that they commented on a specific task.
   
 ## Entities
 The database includes the entities below:
