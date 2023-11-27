@@ -10,22 +10,22 @@
 
 
 ## Scope    
-The database of project management system for organizations, this dercreases operation fees and increases the process speed of projects, and it comfortables to the both methodology are Agile and Scrum.
+The database of project management systems for organizations decreases operation fees and increases the process speed of projects, and it is comfortable with both methodologies, Agile and Scrum.
 
-* accounts: Contains detail information of users.
-* projects: Contains the projects created by users.
-* project views: Contains visualization views of projects.
-* segments: Contains the segments of project's life cycle.
-* tasks: Contains the tasks were created by owners.
-* assignments: Contains the assignments that the owners were assgined to users.
-* task_comments: Contains the comments from users, that they commented on a specific task.
+* accounts: This contains detailed information about users.
+* projects: This contains the projects created by users.
+* project-views: This contains visualization views of projects.
+* Segments: This contains the segments of the project's life cycle.
+* Tasks: This section contains the tasks that were created by the owners.
+* Assignments: This contains the assignments that the owners assigned to users.
+* task_comments: This contains the comments from users that they made on a specific task.
   
 ## Entities
 The database includes the entities below:
 
 #### accounts
 The "account" table includes:
-* id: chỉ ra ID duy nhất của một người dùng là một số nguyên, và thuộc tính này phải là khóa chính.
+* id: The unique ID of a user is an integer, and it's a primary key.
 * username: chỉ ra tên tài khoản duy nhất của người dùng là một văn bản, và thuộc tính này phải là duy nhất.
 * first_name: chỉ ra rằng họ của người dùng là một văn bản, và không thể null.
 * last_name: chỉ ra rằng tên của người dùng là một văn bản, và không thể null.
