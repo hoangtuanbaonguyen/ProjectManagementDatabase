@@ -26,15 +26,15 @@ The database includes the entities below:
 #### accounts
 The "account" table includes:
 * id: The unique ID of a user is an integer, and it's a primary key.
-* username: chỉ ra tên tài khoản duy nhất của người dùng là một văn bản, và thuộc tính này phải là duy nhất.
-* first_name: chỉ ra rằng họ của người dùng là một văn bản, và không thể null.
-* last_name: chỉ ra rằng tên của người dùng là một văn bản, và không thể null.
-* email: chỉ ra Email của người dùng là một văn bản và không thể null.
-* mobile_number: Chỉ ra số điện thoại của người dùng là một văn bản.
-* type: Chỉ ra kiểu người dùng của người dùng là văn bản, và nó bao gồm user và admin.
-* updated_at: chỉ ra lần cuối mà người dùng chỉnh sửa thông tin của tài khoản.
-* created_at: chỉ ra ngày mà người dụng tạo tài khoản là một số.
-* is_active: chỉ ra người dùng có active hay không là một số bao gồm 0 và 1.
+* username: The unique username of a user is text.
+* first_name: The first name of a user is text and not null.
+* last_name: The last name of a user is text and not null.
+* email: The unique email of a user is text and not null.
+* mobile_number: The mobile phone number of a user is text and not null.
+* type: The user's type is text and not null; It includes 'user' and 'admin'.
+* updated_at: The updated_at time is a number and not null.
+* created_at: The create_at time is a number and not null.
+* is_active: The is_active is a number; it includes '0' and '1'.
   
 #### projects
 * id: Chỉ ra ID duy nhất của một dự án là một số nguyên, và thuộc tính này phải là khóa chính.
