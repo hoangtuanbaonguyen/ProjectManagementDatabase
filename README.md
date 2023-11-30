@@ -31,33 +31,33 @@ The "account" table includes:
 * last_name: The last name of a user is text and not null.
 * email: The unique email of a user is text and not null.
 * mobile_number: The mobile phone number of a user is text and not null.
-* type: The user's type is text and not null; It includes 'user' and 'admin'.
+* type: The user's type is text and not null, It includes 'user' and 'admin'.
 * updated_at: The updated_at time is a number and not null.
 * created_at: The create_at time is a number and not null.
-* is_active: The is_active is a number; it includes '0' and '1'.
+* is_active: The is_active is a number, it includes '0' and '1'.
   
 #### projects
-* id: Chỉ ra ID duy nhất của một dự án là một số nguyên, và thuộc tính này phải là khóa chính.
-* owner_id: chỉ ra id của người quản lý dự án là một một số nguyên và không thể null.
-* sponsor_id: chỉ ra id của người chịu trách nhiệm cho dự án là một số nguyên và không thể null.
-* description: chỉ ra nội dung chi tiết của một dự án là một văn bản và có thể null.
-* start_date: chỉ ra ngày bắt đầu của một dự án là một số và không thể null.
-* end_date: chỉ ra ngày kết thúc của một dự án và có thể null.
-* name: chỉ tên của một dự án là một văn bản và không thể null.
-* type: chỉ ra kiểu của một dự án là một văn bản, không thể null và bao gồm private và public.
-* is_active: chỉ ra dự án có active hay không là một số bao gồm 0 và 1.
+* id: The unique ID of a project is an integer, and it's a primary key.
+* owner_id: The project owner ID of a project is an integer.
+* sponsor_id: The sponsor ID is an integer, and it's not null.
+* description: The description of a project is an integer.
+* start_date: The start date of a project is a number, and it's not null.
+* end_date: The end date of a project is a number, and it's not null.
+* name: The name of a project is text, and it's not null.
+* type: The type of a project is text, and it's not null, it includes 'private' and 'public'.
+* is_active: The is_active is a number, it includes '0' and '1'.
 
 #### project_views
-* id: Chỉ ra ID duy nhất của một khung nhìn trong dự án là một số nguyên, và thuộc tính này phải là khóa chính.
-* project_id: chỉ ra id của dự án là một số nguyên, thuộc tính không thể null.
-* title: chỉ ra tiêu đề của một khung nhìn là một văn bản và không thể null.
-* type: chỉ ra kiểu của một khung nhìn là một văn bản, không thể null và bao gồm 'list' và 'calendar'.
+* id: The ID of a project's view is an integer, and it's a primary key.
+* project_id: The project ID is an integer, and it's not null.
+* title: The title of a project's view is text, and it's not null.
+* type: The type of a project's view is text, and it's not null and includes 'list' and 'calendar'.
 
 #### segments
-* id: Chỉ ra ID duy nhất của một giai đoạn là một số nguyên, và thuộc tính này phải là khóa chính.
-* project_id: chỉ ra id của giai đoạn là một số nguyên, và thuộc tính không thể null.
-* title: chỉ ra tiêu đề của một giai đoạn là một văn bản, và thuộc tính không thể null.
-* description: chỉ ra mô tả của một giai đoạn là một văn bản.
+* id: The ID of a segment is an integer, and it's a primary key.
+* project_id: The project ID of a segment is an integer, and it's not null.
+* title: The title of a segment is text, and it's not null.
+* description: The description of a segment is text.
 
 #### tasks
 * id: Chỉ ra ID duy nhất của một công việc là một số nguyên, và thuộc tính này phải là khóa chính.
