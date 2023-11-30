@@ -60,30 +60,30 @@ The "account" table includes:
 * description: The description of a segment is text.
 
 #### tasks
-* id: Chỉ ra ID duy nhất của một công việc là một số nguyên, và thuộc tính này phải là khóa chính.
-* segment_id: chỉ ra id của giai đoạn trong một dự án là một số nguyên, và thuộc tính không thể null.
-* title: chỉ ra tiêu đề của của một công việc là một văn bản, và thuộc tính không thể null.
-* description: chỉ ra mô tả của một công việc là một văn bản.
-* start_at: chỉ ra ngày bắt đầu của một công việc là một số, và thuộc tính không thể null.
-* end_at: chỉ ra ngày kết thúc của một công việc là một số, và thuộc tính không thể null.
-* milestone: chỉ ra một cột mốc hoặc tên gọi của cột mốc là một văn bản.
-* status: chỉ ra trạng thái của một công việc là một văn bản, thuộc tính không thể null và bao gồm 'todo', 'in progress', 'done'.
-* updated_at: chỉ ra ngày sửa đổi gần nhất là một số, thuộc tính không thể null.
-* is_active: chỉ ra công việc có active hay không là một số bao gồm 0 và 1.
+* id: The task ID is an integer, and it's a primary key.
+* segment_id: The task's segment ID is an integer, and it's not null.
+* title: The title of a task is text, and it's not null.
+* description: The description of a task is text.
+* start_at: The start date of a task is a number, and it's not null.
+* end_at: The end date of a task is a number, and it's not null.
+* milestone: The milestone of a task is text.
+* status: The status of a task is text, and it's not null, it includes 'todo', 'in progress', 'done'.
+* updated_at: The updated at of a task is a number, and it's not null.
+* is_active: The is_active is a number, it includes '0' and '1'.
 
 #### task_comments
-* id: Chỉ ra ID duy nhất của một comment trong một công việc cụ thể là một số nguyên, và thuộc tính này phải là khóa chính.
-* task_id: chỉ ra id của một công việc là một số nguyên, và thuộc tính không thể null.
-* account_id: chỉ ra id của một người dùng cụ thể là một số nguyên, và thuộc tính không thể null.
-* content: chỉ ra nội dung của một bình luận là một văn bản, và thuộc tính không thể null.
-* comment_at: chỉ ra thời gian bình luận là một số, và thuộc tính không thể null.
+* id: The task comment ID is an integer, and it's a primary key.
+* task_id: The task ID is an integer, and it's not null.
+* account_id: The account ID is an integer, and it's not null.
+* content: The content of a comment is text, and it's not null.
+* comment_at: the comment date is a number, it's not null.
 
 #### assignments
-* id: Chỉ ra ID duy nhất của một phân việc là một số nguyên, và thuộc tính này phải là khóa chính.
-* account_id: chỉ ra id của người dùng là một số nguyên, không thể null.
-* task_id: chỉ ra id của một công việc là một số nguyên, không thể null.
-* type: chỉ ra kiểu của một phân việc, và không thể null bao gồm 'assignee' và 'reviewer'.
-* assigned_at: chỉ ra thời gian đã phân việc là một số, không thể null.
+* id: The assignment ID is an integer, and it's a primary key.
+* account_id: The account ID of an assignment is an integer, it's not null.
+* task_id: The task ID of an assignment is an integer, it's not null.
+* type: The type of an assignment is text, and it's not null that includes 'assignee' and 'reviewer'.
+* assigned_at: the assignment date is a number, it's not null.
 
 ## Relationships
 #### ERD Schema
